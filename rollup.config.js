@@ -5,6 +5,8 @@ import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import sveltePreprocess from "svelte-preprocess";
 import typescript from "@rollup/plugin-typescript";
+import json from "@rollup/plugin-json";
+import css from "rollup-plugin-css-only";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -35,19 +37,17 @@ export default {
         sourcemap: true,
         format: "iife",
         name: "app",
-        file: "public/build/bundle.js"
+        file: "docs/build/bundle.js"
     },
     plugins: [
         svelte({
             // enable run-time checks when not in production
             dev: !production,
-            // we"ll extract any component CSS out into
-            // a separate file - better for performance
-            css: css => {
-                css.write("bundle.css");
-            },
-            preprocess: sveltePreprocess(),
         }),
+
+        // we'll extract any component CSS out into
+		// a separate file - better for performance
+        css({ output: "bundle.css" }),
 
         // If you have external dependencies installed from
         // npm, you"ll most likely need these plugins. In
@@ -68,13 +68,14 @@ export default {
         // the bundle has been generated
         !production && serve(),
 
-        // Watch the `public` directory and refresh the
+        // Watch the `docs` directory and refresh the
         // browser on changes when not in production
-        !production && livereload("public"),
+        !production && livereload("docs"),
 
         // If we"re building for production (npm run build
         // instead of npm run dev), minify
-        production && terser()
+        production && terser(),
+        json()
     ],
     watch: {
         clearScreen: false

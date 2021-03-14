@@ -1,0 +1,17 @@
+{
+    "name": "Kodefi",
+    "short_name": "Kodefi",
+    "icons": [{
+        "src": "resources/favicon/android-chrome-192x192.png",
+        "sizes" :"192x192",
+        "type": "image/png"
+    },
+    {
+        "src": "resources/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "theme_color": "#e54b4b", 
+    "background_color": "#f7ebe8",
+    "display": "standalone"
+}

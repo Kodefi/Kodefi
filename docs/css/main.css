@@ -21,7 +21,7 @@ body {
 }
 
 /* HELPERS */
-.non-selectable {
+.no-selectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -29,7 +29,7 @@ body {
     -ms-user-select: none;
     user-select: none;
 } /* Desactiva la seleccion de un elemento */
-.non-clickable { pointer-events: none } /* Desactiva los pointer-events de un elemento */
+.no-clickable { pointer-events: none } /* Desactiva los pointer-events de un elemento */
 .material-icons { font-family: 'Material Icons' !important } /* Asigna la fuente a los iconos */
 .lighter { font-weight: lighter !important } /* Cambia el grosor de la fuete a ligter */
 .toUpperCase { text-transform: uppercase } /* Transforma el texto en mayúsculas */

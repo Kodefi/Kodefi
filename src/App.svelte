@@ -8,7 +8,6 @@
 	</div>
 </header>
 <div class="main">
-	a
 </div>
 
 <style>

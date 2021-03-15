@@ -21,28 +21,28 @@
 
 <style>
     nav {
-        border: none;
-        box-shadow: unset;
-        height: 80px;
-        line-height: 80px;
+        border: none !important;
+        box-shadow: unset !important;
+        height: 80px !important;
+        line-height: 80px !important;
     }
 
     a {
-        color: #1e1e24;
-        user-select: none;
-        font-size: 1.15rem;
+        color: #1e1e24 !important;
+        user-select: none !important;
+        font-size: 1.15rem !important;
     }
 
     .desactivado {
-        user-select: none;
-        pointer-events: none;
+        user-select: none !important;
+        pointer-events: none !important;
     }
 
     .desactivado:hover {
-        cursor: pointer;
+        cursor: pointer !important;
     }
 
     .desactivado a {
-        color: gray
+        color: gray !important
     }
 </style>

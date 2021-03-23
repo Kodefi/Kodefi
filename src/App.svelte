@@ -7,11 +7,13 @@
 		<Navbar/>
 	</div>
 </header>
-<div class="main">
-</div>
+a
 
 <style>
 	header {
 		min-height: 100vh;
+		background-image: url("../resources/header.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 </style>

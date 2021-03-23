@@ -5,7 +5,7 @@
 
 <nav class="transparent">
     <div class="nav-wrapper">
-        <a href="/" class="brand-logo"><Kodefisvg style="vertical-align:middle;" type="dark"/></a>
+        <a href="/" class="brand-logo"><Kodefisvg style="vertical-align:sub;" type="dark"/></a>
         <ul id="nav-mobile" class="right">
             <li class="hide-on-med-and-down"><a href="sass.html">Servicios</a></li>
             <li class="hide-on-med-and-down desactivado"><a href="badges.html">Blog</a></li>

@@ -1,34 +1,36 @@
 <script lang="ts">
-    import Kodefisvg from "./Kodefisvg.svelte"
+    import Kodefi from "./svgs/Kodefi.svelte"
     import ButtonPrimary from "./ButtonPrimary.svelte"
 </script>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><Kodefi style="vertical-align:sub;" type="light"/></a>
+            <ul id="nav-mobile" class="right">
+                <li class="hide-on-med-and-down"><a href="#servicios">Servicios</a></li>
+                <li class="hide-on-med-and-down desactivado"><a href="/">Blog</a></li>
+                <li class="hide-on-med-and-down desactivado"><a href="/">Open Source</a></li>
+                <li class="hide-on-med-and-down desactivado"><a href="/">Equipo</a></li>
+                <li class="hide-on-small-only">
+                    <ButtonPrimary content="Contacto" hex_color="#669fa4"/>
+                </li>
+            </ul>
 
-<nav class="transparent">
-    <div class="nav-wrapper">
-        <a href="/" class="brand-logo"><Kodefisvg style="vertical-align:sub;" type="dark"/></a>
-        <ul id="nav-mobile" class="right">
-            <li class="hide-on-med-and-down"><a href="sass.html">Servicios</a></li>
-            <li class="hide-on-med-and-down desactivado"><a href="badges.html">Blog</a></li>
-            <li class="hide-on-med-and-down desactivado"><a href="badges.html">Open Source</a></li>
-            <li class="hide-on-med-and-down"><a href="collapsible.html">Equipo</a></li>
-            <li class="hide-on-small-only">
-                <ButtonPrimary content="Contacto" hex_color="#e54b4b"/>
-            </li>
-        </ul>
-        
-    </div>
-</nav>
-
+        </div>
+    </nav>
+</div>
 <style>
     nav {
         border: none !important;
-        box-shadow: unset !important;
+        /* box-shadow: unset !important; */
         height: 80px !important;
         line-height: 80px !important;
+        background-color: #ed564e;
+        padding: 0 15%;
     }
 
     a {
-        color: #1e1e24 !important;
+        color: #fff7f2 !important;
         user-select: none !important;
         font-size: 1.15rem !important;
     }
@@ -45,4 +47,20 @@
     .desactivado a {
         color: gray !important
     }
+    
+    @media only screen and (max-width: 601px){
+        .brand-logo {
+            left: 0;
+            -webkit-transform: unset;
+            transform: unset;
+
+        }
+    }
+
+    @media only screen and (max-width: 993px){ 
+        nav {
+            padding: 0 5%;
+        }
+    }
+    
 </style>

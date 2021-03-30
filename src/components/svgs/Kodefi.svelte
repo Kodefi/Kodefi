@@ -1,7 +1,7 @@
 <script lang="ts">
     export let type:"dark"|"light" = "dark";
     export let style:string|null = null;
-    const color = type == "dark" ? "#1e1e24" : "#f7ebe8"
+    const color = type == "dark" ? "#1e1e24" : "#fff7f2"
     
 </script>
 

@@ -44,8 +44,4 @@ import Icon from "../components/Icon.svelte";
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 15px;
     }
-
-    .icon {
-
-    }
 </style>

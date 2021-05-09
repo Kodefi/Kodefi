@@ -1,23 +1,22 @@
 <script lang="ts">
 	import ButtonPrimary from "./components/ButtonPrimary.svelte";
-	import ComoLoHacemos from "./components/ComoLoHacemos.svelte";
+	import ComoLoHacemos from "./sections/ComoLoHacemos.svelte";
 	import Navbar from "./components/Navbar.svelte";
 	import WebDevelopment from "./components/svgs/WebDevelopment.svelte";
-	import Somos from "./components/Somos.svelte";
-import Servicios from "./components/Servicios.svelte";
-import Contacto from "./components/Contacto.svelte";
-import Footer from "./components/Footer.svelte";
+	import Somos from "./sections/Somos.svelte";
+	import Servicios from "./sections/Servicios.svelte";
+	import Contacto from "./sections/Contacto.svelte";
+	import Footer from "./sections/Footer.svelte";
 </script>
 
 <header>
 	<Navbar/>
-	<!-- <div class="noise"></div> -->
 	<WebDevelopment style="position: absolute; right: 0; width: 50vw; height: calc(100% - 50px);"/>
 	<div class="container header_container">
 		<div class="header_content">
 			<h3>Ponemos <br>tu emprendimiento<br> en internet.</h3>
 			<h5>Planificamos, diseñamos, desarrollamos<br> y ponemos tu sitio en la web.</h5>
-			<ButtonPrimary content="Conversemos" hex_color="#669fa4" style="width:100%; margin: 25px 0"/>
+			<ButtonPrimary href="#contacto" content="Conversemos" hex_color="#669fa4" style="width:100%; margin: 25px 0"/>
 		</div>
 	</div>
 </header>
@@ -25,15 +24,19 @@ import Footer from "./components/Footer.svelte";
 	<div class="container somos-padding">
 		<Somos/>
 	</div>
-	<div class="container">
+
+	<div class="container-fluid" id="como_lo_hacemos">
 		<ComoLoHacemos/>
 	</div>
-	<div class="container-fluid" id="servicios">
+
+	<div class="container" id="servicios">
 		<Servicios/>
 	</div>
-	<div class="container">
+
+	<div class="container" id="contacto">
 		<Contacto/>
 	</div>
+
 	<Footer/>
 </main>
 
@@ -41,7 +44,7 @@ import Footer from "./components/Footer.svelte";
 	header {
 		position: relative;
 		background: #ed564e;
-		background: linear-gradient(120deg, rgba(237,86,78,1) 65%, #fff7f2 65%); 
+		background: linear-gradient(120deg, rgba(237,86,78,1) 65%, #fff7f2 65.05%); 
 		color: #fff7f2;
 		padding-bottom: 50px;
 	}
@@ -76,9 +79,13 @@ import Footer from "./components/Footer.svelte";
 	}
 
 	.somos-padding {
-		padding: 50px;
+		padding: 80px 0;
 	}
 
+	#servicios, #contacto {
+		padding-top: 81px;
+	}
+	
 	@media only screen and (max-height: 650px){
 		.header_container {
 			height: unset;

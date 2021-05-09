@@ -5,14 +5,14 @@
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper">
-            <a href="/" class="brand-logo"><Kodefi style="vertical-align:sub;" type="light"/></a>
+            <a href="/" class="brand-logo"><Kodefi style="vertical-align:middle;" type="light"/></a>
             <ul id="nav-mobile" class="right">
                 <li class="hide-on-med-and-down"><a href="#servicios">Servicios</a></li>
                 <li class="hide-on-med-and-down desactivado"><a href="/">Blog</a></li>
                 <li class="hide-on-med-and-down desactivado"><a href="/">Open Source</a></li>
                 <li class="hide-on-med-and-down desactivado"><a href="/">Equipo</a></li>
                 <li class="hide-on-small-only">
-                    <ButtonPrimary content="Contacto" hex_color="#669fa4"/>
+                    <ButtonPrimary href="#contacto" content="Contacto" hex_color="#669fa4"/>
                 </li>
             </ul>
 

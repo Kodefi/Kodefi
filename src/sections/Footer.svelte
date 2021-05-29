@@ -27,6 +27,7 @@ import Icon from "../components/Icon.svelte";
                 alt="Github"
                 to="https://github.com/Kodefi"
                 size="32px"
+                clas="hide-on-small-only"
             />
             <Icon
                 icon="resources/linkedin.png"
@@ -54,5 +55,11 @@ import Icon from "../components/Icon.svelte";
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 15px;
+    }
+
+    @media only screen and (max-width: 601px){
+        .social {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 </style>

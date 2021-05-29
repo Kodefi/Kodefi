@@ -9,8 +9,7 @@
             <ul id="nav-mobile" class="right">
                 <li class="hide-on-med-and-down"><a href="#servicios">Servicios</a></li>
                 <li class="hide-on-med-and-down desactivado"><a href="/">Blog</a></li>
-                <li class="hide-on-med-and-down desactivado"><a href="/">Open Source</a></li>
-                <li class="hide-on-med-and-down desactivado"><a href="/">Equipo</a></li>
+                <li class="hide-on-med-and-down"><a target="_blank" href="https://github.com/Kodefi">Open Source</a></li>
                 <li class="hide-on-small-only">
                     <ButtonPrimary href="#contacto" content="Contacto" hex_color="#669fa4"/>
                 </li>

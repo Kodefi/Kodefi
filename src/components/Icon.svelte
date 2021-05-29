@@ -2,11 +2,12 @@
     export let icon:string;
     export let to:string;
     export let alt:string;
+    export let title:string;
     export let size = "50px";
 </script>
 
 <div style="--icon-size: {size}">
-    <a target="_blank" href="{to}">
+    <a target="_blank" href="{to}" title="{title || alt}">
         <img src="{icon}" alt="{alt}">
     </a>
 </div>

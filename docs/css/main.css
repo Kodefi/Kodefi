@@ -39,7 +39,13 @@ h1, h2, h3, h4, h5, h6 { transition: font-size 0.05s } /* Añade una pequeña tr
 input[type="text"] + label { pointer-events: none } /* Corrige un defecto en los inputs de MaterializeCSS */
 
 /* MAIN */
-
+  /* Este es el label cuando está levantado al escribir dentro */
+  .input-field > label:not(.label-icon).active {
+    -webkit-transform: translateY(-1.5rem) scale(0.8) !important;
+    transform: translateY(-1.5rem) scale(0.8) !important;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
 
 /* @MEDIA SCREEN */
 @media only screen and (max-width: 601px){

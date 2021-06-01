@@ -7,6 +7,7 @@
 	import Servicios from "./sections/Servicios.svelte";
 	import Contacto from "./sections/Contacto.svelte";
 	import Footer from "./sections/Footer.svelte";
+	import Compromiso from "./sections/Compromiso.svelte";
 </script>
 
 <header>
@@ -31,6 +32,12 @@
 
 	<div class="container" id="servicios">
 		<Servicios/>
+	</div>
+
+	<div class="container-fluid" id="compromiso">
+		<div class="container">
+			<Compromiso/>
+		</div>
 	</div>
 
 	<div class="container" id="contacto">
@@ -82,6 +89,12 @@
 		padding: 80px 0;
 	}
 
+	#compromiso {
+		background-color: rgba(0, 0, 0, 0.0075);
+		box-shadow: 0 0 10px -5px rgba(0,0,0,0.15) inset;
+		padding: 80px 0;
+	}
+
 	#servicios, #contacto {
 		padding-top: 81px;
 	}
@@ -95,6 +108,7 @@
 			transform: unset;
 			padding-top: 25px
 		}
+
 	}
 
 	@media only screen and (max-width: 601px){
@@ -117,6 +131,9 @@
 		.somos-padding {
 			padding: 25px 0px !important;
 		}
+		#servicios, #contacto {
+			padding-top: 20px;
+		}
 	}
 
 	@media only screen and (max-width: 993px){
@@ -128,6 +145,9 @@
 		}
 		.somos-padding {
 			padding: 25px
+		}
+		#servicios, #contacto {
+			padding-top: 40px;
 		}
 	}
 </style>

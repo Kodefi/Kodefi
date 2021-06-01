@@ -84,7 +84,8 @@
   /* Esta es la cajita de los inputs*/
   input:not([type]), input[type="text"]:not(.browser-default), input[type="email"]:not(.browser-default),  input[type="tel"]:not(.browser-default), textarea.materialize-textarea {
     background-color: rgba(0, 0, 0, 0.025);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0,0,0,0.02);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     border-radius: 2px;
     padding-left: 0.75rem;
   }

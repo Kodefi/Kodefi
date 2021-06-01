@@ -51,6 +51,11 @@ import Card from "../components/Card.svelte";
         background: #ed564e;
         background: linear-gradient(179deg, #fff7f2 5%, #ed564e 5.1%, #ed564e 95%, #fff7f2 95.1%); 
     }   
+    @media only screen and (max-width: 601px){
+        .row {
+            padding: 125px 0;
+        }
+    }
 
     @media only screen and (min-width: 1440px){
         .offset-l1440 {

@@ -8,6 +8,7 @@
             <a href="/" class="brand-logo"><Kodefi style="vertical-align:middle;" type="light"/></a>
             <ul id="nav-mobile" class="right">
                 <li class="hide-on-med-and-down"><a href="#servicios">Servicios</a></li>
+                <li class="hide-on-med-and-down"><a href="#compromiso">Compromiso</a></li>
                 <li class="hide-on-med-and-down desactivado"><a href="/">Blog</a></li>
                 <li class="hide-on-med-and-down"><a target="_blank" href="https://github.com/Kodefi">Open Source</a></li>
                 <li class="hide-on-small-only">

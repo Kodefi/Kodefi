@@ -8,24 +8,29 @@
         <p class="center">En Kodefi apoyamos las iniciativas medioambientales y promovemos el desarrollo de nuevos emprendimientos.</p>
         <p class="center">Ponte en <a href="#contacto">contacto</a> con nosotros y aplica ahora.</p>
     </div>
-    <div class="col s10 m6 fhd4 offset-s1 offset-fhd2">
-        <Card 
-            title="Organizaciones<br>medioambientales<span style='font-size:12px;vertical-align: bottom;'>*</span>"
-            content="Si tenés una organización o realizas actividades respecto al cuidado del medioambiente, desde Kodefi queremos ayudar. Ofrecemos hasta un 30% de descuento y opciones de pago especiales en la mayoría de nuestros servicios."
-            image_src="resources/ambiente.svg"
-            image_alt="Medioambiente"
-        />
-    </div>
-    <div class="col s10 m6 fhd4 offset-s1">
-        <Card
-            title="Nuevos<br>emprendimientos<span style='font-size:12px;vertical-align: bottom;'>*</span>"
-            content="Si estás iniciando un nuevo emprendimiento y querés posicionarte online, desde Kodefi queremos hacer despegar tu negocio. Ofrecemos hasta un 30% de descuento y opciones de pago especiales en la mayoría de nuestros servicios."
-            image_src="resources/emprendimiento.svg"
-            image_alt="Emprendimientos"/>
-    </div>
+
     <div class="row">
-        <p class="center disc">* El equipo de Kodefi se reserva el derecho a elegir los proyectos a apoyar</p>
+        <div class="col s10 m6 fhd4 offset-s1 offset-fhd2">
+            <Card 
+                title="Organizaciones<br>medioambientales<span style='font-size:12px;vertical-align: bottom;'>*</span>"
+                content="Si tenés una organización o realizas actividades respecto al cuidado del medioambiente, desde Kodefi queremos ayudar. Ofrecemos hasta un 30% de descuento y opciones de pago especiales en la mayoría de nuestros servicios."
+                image_src="resources/ambiente.svg"
+                image_alt="Medioambiente"
+            />
+        </div>
+        <div class="col s10 m6 fhd4 offset-s1">
+            <Card
+                title="Nuevos<br>emprendimientos<span style='font-size:12px;vertical-align: bottom;'>*</span>"
+                content="Si estás iniciando un nuevo emprendimiento y querés posicionarte online, desde Kodefi queremos hacer despegar tu negocio. Ofrecemos hasta un 30% de descuento y opciones de pago especiales en la mayoría de nuestros servicios."
+                image_src="resources/emprendimiento.svg"
+                image_alt="Emprendimientos"/>
+        </div>
     </div>
+
+    <div class="row">
+        <p class="center disclaim">* El equipo de Kodefi se reserva el derecho a elegir los proyectos a apoyar</p>
+    </div>
+
     <div class="row">
         <div class="col s12 m10 offset-m1 l8 offset-l2">
             <ButtonPrimary href="#contacto" content="Aplicar ahora" style="width:100%" hex_color="#669fa4"/>
@@ -34,8 +39,7 @@
 </div>
 
 <style>
-    .disc {
-        float: right;
+    .disclaim {
         font-size: 12px !important;
         color: rgba(0, 0, 0, 0.5)
     }
